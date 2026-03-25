@@ -27,9 +27,7 @@ class MainActivity2 : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var googleMap : GoogleMap
 
     private val permissions = arrayOf(
-        android.Manifest.permission.ACCESS_FINE_LOCATION,
-        android.Manifest.permission.ACCESS_COARSE_LOCATION,
-        android.Manifest.permission.READ_CONTACTS
+       /*...*/
     )
 
     private val permissionCode = 38
@@ -124,23 +122,7 @@ class MainActivity2 : AppCompatActivity(), OnMapReadyCallback {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
-        when(item.itemId){
-            R.id.map_non -> {
-                googleMap.mapType = GoogleMap.MAP_TYPE_NONE
-            }
-
-            R.id.map_normal -> {
-                googleMap.mapType = GoogleMap.MAP_TYPE_NORMAL
-            }
-
-            R.id.map_satellite -> {
-                googleMap.mapType = GoogleMap.MAP_TYPE_SATELLITE
-            }
-
-            R.id.map_Hybrid -> {
-                googleMap.mapType = GoogleMap.MAP_TYPE_HYBRID
-            }
-        }
+      /*...*/
         return super.onOptionsItemSelected(item)
     }
 }
